@@ -17,7 +17,9 @@ class App extends Component  {
   render(){
     return (
       <form>
-        
+        <div>
+        <input type="submit" value="Next"/>
+        </div>
       </form>
     );
   }
