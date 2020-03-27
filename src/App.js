@@ -24,8 +24,8 @@ class App extends Component  {
           </label>
           <label>
             <input type="button" value="Logo"/>
-            Upload a photo
           </label>
+          Upload a photo
         </div>
         <div className="row">
           <label></label>
