@@ -19,7 +19,7 @@ class App extends Component  {
       <form>
         <div className="row">
           <label>
-            Name:
+            Name
             <input type="text" placeholder="Pet's name"/>
           </label>
           <label>
@@ -31,13 +31,19 @@ class App extends Component  {
         </div>
         <div className="row">
           <label>
-            Breed:
+            Breed
             <input type="text" placeholder="Pet's breed"/>
           </label>
-          <label></label>
+          <label>
+            Birthday
+            <input type="date"/>
+          </label>
         </div>
         <div className="row">
-          <label></label>
+          <label>
+            Gender
+            <input type="checkbox"/> 
+          </label>
           <label></label>
         </div>
         <label></label>
