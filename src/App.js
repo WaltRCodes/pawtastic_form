@@ -33,7 +33,7 @@ class App extends Component  {
         <div className="row">
           <label>
             Breed
-            <input type="text" placeholder="Pet's breed"/>
+            <input type="text" value={this.state.breed}placeholder="Pet's breed"/>
           </label>
           <label>
             Birthday
