@@ -17,15 +17,15 @@ class App extends Component  {
   render(){
     return (
       <form>
-        <div>
+        <div className="row">
           <label></label>
           <label></label>
         </div>
-        <div>
+        <div className="row">
           <label></label>
           <label></label>
         </div>
-        <div>
+        <div className="row">
           <label></label>
           <label></label>
         </div>
