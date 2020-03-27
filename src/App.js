@@ -18,6 +18,19 @@ class App extends Component  {
     return (
       <form>
         <div>
+          <label></label>
+          <label></label>
+        </div>
+        <div>
+          <label></label>
+          <label></label>
+        </div>
+        <div>
+          <label></label>
+          <label></label>
+        </div>
+        <label></label>
+        <div>
         <input type="button" value="Back"/>
         <input type="submit" value="Next"/>
         </div>
