@@ -44,7 +44,10 @@ class App extends Component  {
             Gender
             <input type="checkbox"/> 
           </label>
-          <label></label>
+          <label>
+            Spayed or Neutered
+            <input type="checkbox"/> 
+          </label>
         </div>
         <label></label>
         <div>
