@@ -30,7 +30,10 @@ class App extends Component  {
           Upload a photo
         </div>
         <div className="row">
-          <label></label>
+          <label>
+            Breed:
+            <input type="text" placeholder="Pet's breed"/>
+          </label>
           <label></label>
         </div>
         <div className="row">
