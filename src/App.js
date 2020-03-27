@@ -14,8 +14,12 @@ class App extends Component  {
     };
 
     this.handleName = this.handleName.bind(this);
+    this.handleBreed = this.handleBreed.bind(this);
   }
   handleName() {
+
+  }
+  handleBreed() {
     
   }
   render(){
