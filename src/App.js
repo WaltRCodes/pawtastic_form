@@ -23,8 +23,10 @@ class App extends Component  {
             <input type="text" placeholder="Pet's name"/>
           </label>
           <label>
+            <br/>
             <input type="button" value="Logo"/>
           </label>
+          <br/>
           Upload a photo
         </div>
         <div className="row">
