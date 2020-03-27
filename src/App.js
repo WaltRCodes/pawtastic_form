@@ -18,7 +18,10 @@ class App extends Component  {
     return (
       <form>
         <div className="row">
-          <label></label>
+          <label>
+            Name:
+            <input type="text" placeholder="Pet's name"/>
+          </label>
           <label></label>
         </div>
         <div className="row">
