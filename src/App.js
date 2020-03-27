@@ -12,8 +12,12 @@ class App extends Component  {
       spayedOrNeutered:'',
       weight:''
     };
-  }
 
+    this.handleName = this.handleName.bind(this);
+  }
+  handleName() {
+    
+  }
   render(){
     return (
       <form>
