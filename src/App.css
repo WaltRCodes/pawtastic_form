@@ -5,12 +5,19 @@
 .row{
   display:flex;
   flex-direction: row;
+  padding-bottom: 20px;
 }
 form{
   display:flex;
   flex-direction: column;
+  width: 500px;
 }
 label{
   display:flex;
   flex-direction: column;
+  padding-left: 20px;
+  width: 100%;
+}
+#logoButton{
+  margin-right:10px;
 }

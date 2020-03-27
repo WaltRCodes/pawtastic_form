@@ -23,11 +23,12 @@ class App extends Component  {
             <input type="text" placeholder="Pet's name"/>
           </label>
           <label>
-            <br/>
-            <input type="button" value="Logo"/>
+            <br />
+            <div className="row">
+              <input type="button" value="Logo" id="logoButton"/>
+              Upload a photo
+            </div>
           </label>
-          <br/>
-          Upload a photo
         </div>
         <div className="row">
           <label>
