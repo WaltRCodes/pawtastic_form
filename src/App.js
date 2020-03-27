@@ -20,7 +20,7 @@ class App extends Component  {
         <div className="row">
           <label>
             Name
-            <input type="text" placeholder="Pet's name"/>
+            <input type="text" value={this.state.name}placeholder="Pet's name"/>
           </label>
           <label>
             <br />
