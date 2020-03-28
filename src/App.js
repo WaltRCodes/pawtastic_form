@@ -20,7 +20,7 @@ class App extends Component  {
 
   }
   handleBreed() {
-    
+
   }
   render(){
     return (
@@ -59,9 +59,13 @@ class App extends Component  {
           </label>
         </div>
         <label></label>
-        <div>
-        <input type="button" value="Back"/>
-        <input type="submit" value="Next"/>
+        <div  className="row">
+          <label>
+            <input type="button" value="Back"/>
+          </label>
+          <label>
+            <input type="submit" value="Next"/>
+          </label>
         </div>
       </form>
     );
