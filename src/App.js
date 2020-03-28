@@ -68,11 +68,15 @@ class App extends Component  {
         </div>
         <label>
           Weight
-          <div>
-            <span>0-25 lbs</span>
-            <span>25-50 lbs</span>
-            <span>50-100 lbs </span>
-            <span>100+ lbs</span>
+          <div className="row">
+            <input type="radio" id="25" name="weight" value="" />
+            <label for="25">0-25 lbs</label>
+            <input type="radio" id="50" name="weight" value="" />
+            <label for="50">25-50 lbs</label>
+            <input type="radio" id="75" name="weight" value="" />
+            <label for="75">50-100 lbs</label>
+            <input type="radio" id="100" name="weight" value="" />
+            <label for="100">100+ lbs</label>
           </div>
         </label>
         <div  className="row">
