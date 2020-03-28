@@ -51,11 +51,13 @@ class App extends Component  {
         <div className="row">
           <label>
             Gender
-            <input type="checkbox"/> 
+            <input type="checkbox" id="toggle" class="checkbox" />  
+            <div for="toggle" class="switch"></div>
           </label>
           <label>
             Spayed or Neutered
-            <input type="checkbox"/> 
+            <input type="checkbox" id="toggle2" class="checkbox" />  
+            <div for="toggle2" class="switch"></div>
           </label>
         </div>
         <label></label>
