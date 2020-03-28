@@ -52,15 +52,29 @@ class App extends Component  {
           <label>
             Gender
             <input type="checkbox" id="toggle" class="checkbox" />  
-            <div for="toggle" class="switch"></div>
+            <div for="toggle" class="switch">
+              <span>Male</span>
+              <span>Female</span>
+            </div>
           </label>
           <label>
             Spayed or Neutered
             <input type="checkbox" id="toggle2" class="checkbox" />  
-            <div for="toggle2" class="switch"></div>
+            <div for="toggle2" class="switch">
+              <span>Spayed</span>
+              <span>Neutered</span>
+            </div>
           </label>
         </div>
-        <label></label>
+        <label>
+          Weight
+          <div>
+            <span>0-25 lbs</span>
+            <span>25-50 lbs</span>
+            <span>50-100 lbs </span>
+            <span>100+ lbs</span>
+          </div>
+        </label>
         <div  className="row">
           <label>
             <input type="button" value="Back"/>
