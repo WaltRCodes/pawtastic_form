@@ -8,8 +8,8 @@ class App extends Component  {
       name:'',
       breed:'',
       birthday:new Date().toString(),
-      gender:'',
-      spayedOrNeutered:'',
+      gender:'Male',
+      spayedOrNeutered:'Spayed',
       weight:''
     };
 
@@ -17,14 +17,28 @@ class App extends Component  {
     this.handleBreed = this.handleBreed.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleBirthday = this.handleBirthday.bind(this);
+    this.handleWeight = this.handleWeight.bind(this);
+    this.handleGender = this.handleGender.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleSubmit(event) {
+    event.preventDefault();
+    alert(`Dog info ${this.state.name} ${this.state.breed} ${this.state.birthday} ${this.state.gender} ${this.state.weight} ${this.state.spayedOrNeutered}`);
   }
   handleBirthday(event){
-    
     console.log(event.target.value);
     this.setState({birthday: new Date(event.target.value).toString()});
   }
   handleChange(event) {
-    
+    console.log(event.target.value);
+    if(this.state.spayedOrNeutered==="Spayed"){
+      this.setState({spayedOrNeutered: "Neutered"});
+    } else {
+      this.setState({spayedOrNeutered: "Spayed"});
+    }
+  }
+  handleWeight(event) {
+    this.setState({weight: event.target.value});
   }
   handleName(event) {
     this.setState({name: event.target.value});
@@ -32,9 +46,16 @@ class App extends Component  {
   handleBreed(event) {
     this.setState({breed: event.target.value});
   }
+  handleGender(){
+    if(this.state.gender==="Male"){
+      this.setState({gender: "Female"});
+    } else {
+      this.setState({gender: "Male"});
+    }
+  }
   render(){
     return (
-      <form onSubmit={this.handleChange}>
+      <form onSubmit={this.handleSubmit}>
         <div className="row">
           <label>
             Name
@@ -61,7 +82,7 @@ class App extends Component  {
         <div className="row">
           <label>
             Gender
-            <input type="checkbox" id="toggle" className="checkbox" onChange={this.handleChange}/>  
+            <input type="checkbox" id="toggle" className="checkbox" onChange={this.handleGender}/>  
             <div htmlFor="toggle" className="switch">
               <span>Male</span>
               <span>Female</span>
@@ -79,13 +100,13 @@ class App extends Component  {
         <label>
           Weight
           <div className="row weightContainer">
-            <input type="radio" id="twentyfive" name="weight" value="" onChange={this.handleChange}/>
+            <input type="radio" id="twentyfive" name="weight" value="0-25 lbs" onChange={this.handleWeight}/>
             <label htmlFor="twentyfive" className="weight">0-25 lbs</label>
-            <input type="radio" id="fifty" name="weight" value="" onChange={this.handleChange}/>
+            <input type="radio" id="fifty" name="weight" value="25-50 lbs" onChange={this.handleWeight}/>
             <label htmlFor="fifty" className="weight">25-50 lbs</label>
-            <input type="radio" id="seventyfive" name="weight" value="" onChange={this.handleChange}/>
+            <input type="radio" id="seventyfive" name="weight" value="50-100 lbs" onChange={this.handleWeight}/>
             <label htmlFor="seventyfive" className="weight">50-100 lbs</label>
-            <input type="radio" id="hundred" name="weight" value="" onChange={this.handleChange}/>
+            <input type="radio" id="hundred" name="weight" value="100+ lbs" onChange={this.handleWeight}/>
             <label htmlFor="hundred" className="weight">100+ lbs</label>
             <div className="replacement"></div>
           </div>
