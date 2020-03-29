@@ -55,7 +55,30 @@ class App extends Component  {
   }
   render(){
     return (
-      <form onSubmit={this.handleSubmit}>
+      <div className="row">
+        <div>
+        <div class="sideBar">
+          <input type="radio" checked="checked" name="radio" />
+          <span class="customRadio"></span>
+          Human Profile
+        </div>
+        <div class="sideBar">
+          <input type="radio" name="radio" />
+          <span class="customRadio"></span>
+          Pet basics
+        </div>
+        <div class="sideBar">
+          <input type="radio" name="radio" />
+          <span class="customRadio"></span>
+          Pet Details
+        </div>
+        <div class="sideBar">
+          <input type="radio" name="radio" />
+          <span class="customRadio"></span>
+          Confirm
+        </div>
+        </div>
+        <form onSubmit={this.handleSubmit}>
         <div className="row">
           <label>
             Name
@@ -70,56 +93,57 @@ class App extends Component  {
           </label>
         </div>
         <div className="row">
-          <label>
-            Breed
-            <input type="text" placeholder="Pet's breed" onChange={this.handleBreed}/>
-          </label>
-          <label>
-            Birthday
-            <input type="date" onChange={this.handleBirthday}/>
-          </label>
-        </div>
-        <div className="row">
-          <label>
-            Gender
-            <input type="checkbox" id="toggle" className="checkbox" onChange={this.handleGender}/>  
-            <div htmlFor="toggle" className="switch">
-              <span>Male</span>
-              <span>Female</span>
-            </div>
-          </label>
-          <label>
-            Spayed or Neutered
-            <input type="checkbox" id="toggle2" className="checkbox" onChange={this.handleChange}/>  
-            <div htmlFor="toggle2" className="switch">
-              <span>Spayed</span>
-              <span>Neutered</span>
-            </div>
-          </label>
-        </div>
-        <label>
-          Weight
-          <div className="row weightContainer">
-            <input type="radio" id="twentyfive" name="weight" value="0-25 lbs" onChange={this.handleWeight}/>
-            <label htmlFor="twentyfive" className="weight">0-25 lbs</label>
-            <input type="radio" id="fifty" name="weight" value="25-50 lbs" onChange={this.handleWeight}/>
-            <label htmlFor="fifty" className="weight">25-50 lbs</label>
-            <input type="radio" id="seventyfive" name="weight" value="50-100 lbs" onChange={this.handleWeight}/>
-            <label htmlFor="seventyfive" className="weight">50-100 lbs</label>
-            <input type="radio" id="hundred" name="weight" value="100+ lbs" onChange={this.handleWeight}/>
-            <label htmlFor="hundred" className="weight">100+ lbs</label>
-            <div className="replacement"></div>
+            <label>
+              Breed
+              <input type="text" placeholder="Pet's breed" onChange={this.handleBreed}/>
+            </label>
+            <label>
+              Birthday
+              <input type="date" onChange={this.handleBirthday}/>
+            </label>
           </div>
-        </label>
-        <div  className="row">
+          <div className="row">
+            <label>
+              Gender
+              <input type="checkbox" id="toggle" className="checkbox" onChange={this.handleGender}/>  
+              <div htmlFor="toggle" className="switch">
+                <span>Male</span>
+                <span>Female</span>
+              </div>
+            </label>
+            <label>
+              Spayed or Neutered
+              <input type="checkbox" id="toggle2" className="checkbox" onChange={this.handleChange}/>  
+              <div htmlFor="toggle2" className="switch">
+                <span>Spayed</span>
+                <span>Neutered</span>
+              </div>
+            </label>
+          </div>
           <label>
-            <input type="button" value="Back"/>
+            Weight
+            <div className="row weightContainer">
+              <input type="radio" id="twentyfive" name="weight" value="0-25 lbs" onChange={this.handleWeight}/>
+              <label htmlFor="twentyfive" className="weight">0-25 lbs</label>
+              <input type="radio" id="fifty" name="weight" value="25-50 lbs" onChange={this.handleWeight}/>
+              <label htmlFor="fifty" className="weight">25-50 lbs</label>
+              <input type="radio" id="seventyfive" name="weight" value="50-100 lbs" onChange={this.handleWeight}/>
+              <label htmlFor="seventyfive" className="weight">50-100 lbs</label>
+              <input type="radio" id="hundred" name="weight" value="100+ lbs" onChange={this.handleWeight}/>
+              <label htmlFor="hundred" className="weight">100+ lbs</label>
+              <div className="replacement"></div>
+            </div>
           </label>
-          <label>
-            <input type="submit" value="Next"/>
-          </label>
-        </div>
-      </form>
+          <div  className="row">
+            <label>
+              <input type="button" value="Back"/>
+            </label>
+            <label>
+              <input type="submit" value="Next"/>
+            </label>
+          </div>
+        </form>
+      </div>
     );
   }
   
