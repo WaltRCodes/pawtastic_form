@@ -68,15 +68,15 @@ class App extends Component  {
         </div>
         <label>
           Weight
-          <div className="row">
+          <div className="row" id="weightContainer">
             <input type="radio" id="25" name="weight" value="" />
-            <label for="25">0-25 lbs</label>
+            <label for="25" class="weight">0-25 lbs</label>
             <input type="radio" id="50" name="weight" value="" />
-            <label for="50">25-50 lbs</label>
+            <label for="50" class="weight">25-50 lbs</label>
             <input type="radio" id="75" name="weight" value="" />
-            <label for="75">50-100 lbs</label>
+            <label for="75" class="weight">50-100 lbs</label>
             <input type="radio" id="100" name="weight" value="" />
-            <label for="100">100+ lbs</label>
+            <label for="100" class="weight">100+ lbs</label>
           </div>
         </label>
         <div  className="row">

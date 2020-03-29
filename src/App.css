@@ -40,7 +40,7 @@ label{
   height: 18px;
   border-radius:5px;
   background-color: white;
-  opacity: 80%;
+  opacity: 30%;
   top: 1px;
   transition: all 0.3s;
   left : 10%;
@@ -60,3 +60,18 @@ span{
   padding-left:30px;
   padding-right:30px;
 }
+
+.weight{
+    background-color: #eee;
+  
+}
+
+.weight:hover {
+  background-color: #ccc;
+}
+
+#weightContainer input:checked + .weight {
+  background-color: #2196F3;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
