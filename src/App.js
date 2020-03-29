@@ -55,30 +55,33 @@ class App extends Component  {
   }
   render(){
     return (
-      <div className="row">
-        <div>
+      <div className="row" id="box">
+        <div class="menu">
+        <h1>Pawtastic</h1>
         <div className="sideBar">
           <input type="radio" name="radio" />
           <div className="customRadio"></div>
-          Human Profile
+          <p>Human Profile</p>
         </div>
         <div className="sideBar">
-          <input type="radio" name="radio" checked />
+          <input type="radio" name="radio" checked readOnly/>
           <div className="customRadio"></div>
-          Pet basics
-        </div>
-        <div className="sideBar">
-          <input type="radio" name="radio" />
-          <div className="customRadio"></div>
-          Pet Details
+          <p>Pet basics</p>
         </div>
         <div className="sideBar">
           <input type="radio" name="radio" />
           <div className="customRadio"></div>
-          Confirm
+          <p>Pet Details</p>
         </div>
+        <div className="sideBar">
+          <input type="radio" name="radio" />
+          <div className="customRadio"></div>
+          <p>Confirm</p>
         </div>
-        <form onSubmit={this.handleSubmit}>
+        <a href="#">Save and Exit</a>
+        </div>
+        <form id="main" onSubmit={this.handleSubmit}>
+        <h1>Yay, we love dogs! Give us the basics about your pup</h1>
         <div className="row">
           <label>
             Name
@@ -134,12 +137,12 @@ class App extends Component  {
               <div className="replacement"></div>
             </div>
           </label>
-          <div  className="row">
+          <div id="white" className="row">
             <label>
-              <input type="button" value="Back"/>
+              <input type="button" id="backButton" value="Back"/>
             </label>
             <label>
-              <input type="submit" value="Next"/>
+              <input type="submit" id="nextButton" value="Next"/>
             </label>
           </div>
         </form>

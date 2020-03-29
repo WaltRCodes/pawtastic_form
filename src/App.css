@@ -5,7 +5,7 @@
 .row{
   display:flex;
   flex-direction: row;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 form{
   display:flex;
@@ -25,7 +25,7 @@ label{
   position: relative;
   display: inline-block;
   height: 20px;
-  background-color: #7983ff;
+  background-color: white;
   border-radius: 20px;
   transition: all 0.3s;
   display: flex;
@@ -39,7 +39,7 @@ label{
   width: 35%;
   height: 18px;
   border-radius:5px;
-  background-color: white;
+  background-color: #ecd1ce;
   opacity: 30%;
   top: 1px;
   transition: all 0.3s;
@@ -50,7 +50,7 @@ label{
   left : 55%;
 }
 .checkbox:checked + .switch {
-  background-color: #7983ff;
+  background-color: #white;
 }
 .checkbox {
   display : none;
@@ -85,6 +85,9 @@ span{
   display: flex;
   flex-direction: row;
   width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding:1px;
 }
 
 .replacement {
@@ -93,7 +96,7 @@ span{
   width: 25%;
   height: 18px;
   border-radius:5px;
-  background-color: red;
+  background-color: #ecd1ce;
   opacity: 30%;
   top: 1px;
   transition: all 0.3s;
@@ -151,9 +154,12 @@ span{
 
 
 .sideBar input:checked ~ .customRadio {
-  background-color: #2196F3;
+  background-color: white;
 }
 
+.sideBar input:checked ~p{
+  color: white;
+}
 
 .customRadio:after {
   content: "";
@@ -173,9 +179,49 @@ span{
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: white;
+	background: #545871;
 }
 
+#box{
+  width: 100%;
+  height:100%;
+  padding:100px
+}
+
+.menu
+{
+  display:flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #545871;
+  border-radius: 20px 0px 0px 20px;
+  padding: 50px;
+}
+h1{
+  text-align: center;
+}
+#backButton{
+  color:#545871;
+  background-color: white;
+  border: #545871 2px solid;
+  border-radius: 20px;
+}
+#nextButton{
+  color:white;
+  background-color: #545871 ;
+  border-radius: 20px;
+}
+#main{
+  background-color: #f7eceb;
+  color:#545871;
+  border-radius: 0px 20px 20px 0px;
+  padding: 50px;
+}
+input{
+  border-radius: 20px;
+  border-style: none;
+  padding: 5px;
+}
 /*
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio
