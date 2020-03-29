@@ -111,6 +111,71 @@ span{
 #hundred:checked ~ .replacement {
   left:75%;
 }
+
+
+.sideBar {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.sideBar input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.customRadio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.sideBar:hover input ~ .customRadio {
+  background-color: #ccc;
+}
+
+
+.sideBar input:checked ~ .customRadio {
+  background-color: #2196F3;
+}
+
+
+.customRadio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.sideBar input:checked ~ .customRadio:after {
+  display: block;
+}
+
+
+.sideBar .customRadio:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
 /*
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio

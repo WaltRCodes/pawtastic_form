@@ -57,24 +57,24 @@ class App extends Component  {
     return (
       <div className="row">
         <div>
-        <div class="sideBar">
-          <input type="radio" checked="checked" name="radio" />
-          <span class="customRadio"></span>
+        <div className="sideBar">
+          <input type="radio" name="radio" />
+          <div className="customRadio"></div>
           Human Profile
         </div>
-        <div class="sideBar">
-          <input type="radio" name="radio" />
-          <span class="customRadio"></span>
+        <div className="sideBar">
+          <input type="radio" name="radio" checked />
+          <div className="customRadio"></div>
           Pet basics
         </div>
-        <div class="sideBar">
+        <div className="sideBar">
           <input type="radio" name="radio" />
-          <span class="customRadio"></span>
+          <div className="customRadio"></div>
           Pet Details
         </div>
-        <div class="sideBar">
+        <div className="sideBar">
           <input type="radio" name="radio" />
-          <span class="customRadio"></span>
+          <div className="customRadio"></div>
           Confirm
         </div>
         </div>
