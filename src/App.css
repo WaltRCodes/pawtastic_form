@@ -30,7 +30,7 @@ label{
   transition: all 0.3s;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  
   width: 100%;
 }
 .switch::after {
@@ -60,18 +60,56 @@ span{
   padding-left:30px;
   padding-right:30px;
 }
-
+/*
 .weight{
     background-color: #eee;
-  
+    transition: all 0.3s;
 }
 
 .weight:hover {
   background-color: #ccc;
+  transition: all 0.3s;
 }
 
-#weightContainer input:checked + .weight {
+.weightContainer input:checked + .weight {
   background-color: #2196F3;
+  transition: all 0.3s;
+}*/
+.weightContainer input{
+  display:none;
+}
+.weightContainer{
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
+.replacement {
+  content: '';
+  position: absolute;
+  width: 25%;
+  height: 18px;
+  border-radius:5px;
+  background-color: red;
+  opacity: 30%;
+  top: 1px;
+  transition: all 0.3s;
+  left:0%;
+}
+#twentyfive:checked ~ .replacement {
+  left:0%;
+}
+#fifty:checked ~ .replacement {
+  left:25%;
+}
+#seventyfive:checked ~ .replacement {
+  left:50%;
+}
+#hundred:checked ~ .replacement {
+  left:75%;
+}
+/*
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
